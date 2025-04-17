@@ -150,7 +150,7 @@ form textarea:focus {
     outline: none;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (min-width:390px) and (max-width:640px) { 
     header {
         padding: 0;
     }
@@ -194,6 +194,10 @@ form textarea:focus {
 
     .produto {
         margin-bottom: 10px;
+    }
+
+    #contato {
+        margin-top: 10%;
     }
 
     form input,
