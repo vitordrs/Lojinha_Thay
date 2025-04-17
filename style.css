@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header,
+footer{
+    background-color: pink;
+    padding: 16px;
+    color: rgb(175, 76, 92);
+}
+
+.container nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(175, 76, 92);
+}
+
+.container nav a:hover {
+    text-decoration: underline;
+}
+
+#sobre-loja {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-left: 40%;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline pink;
+    color: rgb(255, 141, 160);
+}
+
+#sobre {
+    display: grid;
+    margin-left: 15%;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+#sobre img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textos p {
+    margin: 10px;
+}
+
+.textos {
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+.meus-ptodutos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1%;
+    padding: 20px;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.459);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 10px 0 5px;
+    color: rgb(175, 76, 92);
+    text-decoration: underline;
+}
+
+.produto h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.produto button{
+    background-color: pink;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hotpink;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin-left: 20%;
+}
+
+form input {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid pink;
+}
+
+form textarea {
+    resize: none;
+    width: 50%;
+    height: 150px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    border: 2px solid pink;
+}
+
+form button {
+    width: 25%;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: rgba(255, 192, 203, 0.39);
+    outline: none;
+}
+
+@media screen and (max-width:640px) {
+    header {
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    .container h1 {
+        margin-left: 20%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .container nav {
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 2em;
+        margin-left: 15%;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobre img {
+        max-width:350px;
+    }
+
+    .textos p {
+        margin: 45x;
+    }
+    
+    .textos {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .produto {
+        margin-bottom: 10px;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+        margin-left: -25px;
+        margin-bottom: 13px;
+    }
+
+    form button {
+        margin-left: -25px;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width:1023px) {
+    #sobre {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20%;
+    }
+    
+    #sobre img {
+        width: 500px;
+    }
+
+    .textos{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    #produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        gap: 5%;
+        padding: 20px;
+    }
+
+    
+    .produto h3 {
+        font-size: 1.7em;
+    } 
+    
+    .produto h4 {
+        font-size: 1.3em;
+        font-weight: normal;
+        margin-bottom: 10px;
+    } 
+    
+    .produto button{
+        font-size: 1.2em;
+        padding: 15px 15px;
+    }
+
+    #contato {
+        margin-top: 15%;
+    }
+
+    form input,
+    form textarea{
+        width: 87%;
+    }
+
+    form button {
+        width: 43.5%;
+        font-size: 1.3em;
+    }
+}
