@@ -150,7 +150,7 @@ form textarea:focus {
     outline: none;
 }
 
-@media screen and (min-width:390px) and (max-width:640px) { 
+@media screen and (min-width:290px) and (max-width:640px) { 
     header {
         padding: 0;
     }
