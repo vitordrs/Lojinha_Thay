@@ -1,7 +1,7 @@
 # 🛍️ Lojinha da Thay
 
 > Projeto desenvolvido para fins de estudo durante o curso **FullStack Python da EBAC**.
-> Este projeto faz parte do **Módulo 1 – Fundamentos do CSS Responsivo**.
+
 
 ---
 
